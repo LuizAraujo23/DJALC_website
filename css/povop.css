@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #045700;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+header div{
+	display: grid;
+	grid-template-columns: 10% 90%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+header img{
+	width: 100%;
+	left: 0;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 3vw;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+	
+	header div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	header img{
+		width: 30%;
+	}
+	header h1 {
+		color: #fff;
+		margin: 0;
+		font-size: 5vw;
+	}
+	
+	nav{
+		display: none;
+	}
+}
+
+/*Corpo do site*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 90%;
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+p{
+	font-size: 20px;
+}
+
+#galeria{
+  width: 60%;
+  height: 300px;
+  background-image: url("https://images.pexels.com/photos/249360/pexels-photo-249360.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: 100% 100%;
+}
+#projeto, #sobre{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px){
+	#projeto, #sobre{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#sobre{
+		display: flex;
+	}
+	#texto_sobre {
+	  order: 2; /* O texto terá a ordem 2 */
+	}
+
+	#sobre .titulo {
+	  order: 1; /* O título terá a ordem 1 */
+	}
+}
+
+#projeto div, #sobre div{
+  width: 45%;
+  margin: 30px;
+  margin; 0;
+}
+.texto{
+  padding: 20px;
+  color: #fff;
+  border-radius: 25px;
+}
+#texto_projeto{
+  background-color: #ED5500;
+  text-align: justify;
+}
+#texto_sobre{
+  background-color: #045700;
+  text-align: justify;
+}
+.titulo{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+#titulo_projeto{
+  text-align: end;
+}
+#titulo_projeto h2{
+  height: 100%;
+}
+.titulo h2{
+  margin: 0;
+}
+
+#secenta_mais{
+	text-align: center;
+}
+#secenta_mais div{
+	color: #fff;
+	display: flex;
+	justify-content: center;
+}
+#secenta_mais div p{
+	width: 50%;
+	text-align: justify;
+	background-color: #ED5500;
+	padding: 20px;
+	border-radius: 25px;
+}
+
+#residencias{
+	text-align: center;
+}
+#residencias img{
+	width:70%;
+	margin-left: -5%;
+	margin-top: 50px ;
+}
+
+/*Equipe*/
+#coordenacao{
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5px;
+	list-style-type: none;
+	text-align: center;
+}
+/*
+#coordenacao ul{
+
+}
+#coordenacao ul li{
+	margin: 10px;
+}*/
+
+
+footer {
+    background-color: #045700;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+	margin: 10px;
+}
